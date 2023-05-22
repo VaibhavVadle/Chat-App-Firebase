@@ -55,6 +55,7 @@ class AuthMethods {
   Future signOut() async {
     try {
       return await _auth.signOut();
+      // print('User Logout');
     } on FirebaseAuthException catch (e) {
       debugPrint('Error: $e');
     }
